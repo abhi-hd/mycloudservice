@@ -10,7 +10,6 @@ namespace MyWebRole.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Hello Cloud !";
             return View();
         }
 
