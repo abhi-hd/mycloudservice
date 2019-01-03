@@ -10,7 +10,8 @@
 *.csdef
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
-
+CloudService4179/*.csdef
+CloudService4179/*.cscfg
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
