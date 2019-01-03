@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.WindowsAzure.ServiceRuntime;
 
 namespace MyWebRole.Controllers
 {
@@ -16,7 +17,7 @@ namespace MyWebRole.Controllers
 
         public ActionResult About() 
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = RoleEnvironment.CurrentRoleInstance.Id +" " + RoleEnvironment.GetConfigurationSettingValue("MyString") ;
 
             return View();
         }
