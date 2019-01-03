@@ -12,6 +12,7 @@
 *.userprefs
 CloudService4179/*.csdef
 CloudService4179/*.cscfg
+CloudService4179/Profiles/*
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
