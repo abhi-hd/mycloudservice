@@ -19,15 +19,19 @@ namespace MyWorkerRole
 
         public override void Run()
         {
-            Trace.TraceInformation("MyWorkerRole is running");
-
-            try
+            HttpListener listener = new HttpListener();
+            listener.Prefixes.Add("http://+:8081/");
+            listener.Start();
+            while(true)
             {
-                this.RunAsync(this.cancellationTokenSource.Token).Wait();
-            }
-            finally
-            {
-                this.runCompleteEvent.Set();
+                var context = listener.GetContext();
+                HttpListenerResponse response = context.Response;
+                string responseString = "<HTML><BODY> Hello Worker </BODY></HTML>";
+                byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
+                response.ContentLength64 = buffer.Length;
+                System.IO.Stream output = response.OutputStream;
+                output.Write(buffer, 0, buffer.Length);
+                output.Close();
             }
         }
 

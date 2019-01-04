@@ -45,13 +45,23 @@
       <RoleName>MyWebRole</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
+    <ProjectReference Include="..\MyWorkerRole\MyWorkerRole.csproj">
+      <Name>MyWorkerRole</Name>
+      <Project>{6c9a3aae-d070-4575-8da4-44e36233de60}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>MyWorkerRole</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MyWebRoleContent\" />
+    <Folder Include="MyWorkerRoleContent\" />
     <Folder Include="Profiles" />
   </ItemGroup>
   <ItemGroup>
     <DiagnosticsConfiguration Include="MyWebRoleContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="MyWorkerRoleContent\diagnostics.wadcfgx" />
   </ItemGroup>
   <ItemGroup>
     <PublishProfile Include="Profiles\CloudService4179Production.azurePubxml" />

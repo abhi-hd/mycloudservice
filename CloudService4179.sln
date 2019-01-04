@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebRole", "MyWebRole\MyWe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebRole.Tests", "MyWebRole.Tests\MyWebRole.Tests.csproj", "{726794A1-F619-4DF3-8FD1-A8A8391A4D11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWorkerRole", "MyWorkerRole\MyWorkerRole.csproj", "{6C9A3AAE-D070-4575-8DA4-44E36233DE60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{726794A1-F619-4DF3-8FD1-A8A8391A4D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{726794A1-F619-4DF3-8FD1-A8A8391A4D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{726794A1-F619-4DF3-8FD1-A8A8391A4D11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C9A3AAE-D070-4575-8DA4-44E36233DE60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C9A3AAE-D070-4575-8DA4-44E36233DE60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C9A3AAE-D070-4575-8DA4-44E36233DE60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C9A3AAE-D070-4575-8DA4-44E36233DE60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
